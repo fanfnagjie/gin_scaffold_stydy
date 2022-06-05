@@ -1,7 +1,9 @@
 package dao
 
 import (
-	"gorm.io/gorm"
+	"github.com/e421083458/gin_scaffold_study/public"
+	//"gorm.io/gorm"
+	"github.com/e421083458/gorm"
 	"github.com/gin-gonic/gin"
 	"time"
 )
@@ -21,7 +23,7 @@ func (t *Area) TableName() string {
 
 func (t *Area) Find(c *gin.Context, tx *gorm.DB, id string) (*Area, error) {
 	area:=&Area{}
-	err := tx.WithContext(c).Where("id = ?", id).Find(area).Error
+	err := tx.SetCtx(public.GetGinTraceContext(c)).Where("id = ?", id).Find(area).Error
 	if err != nil {
 		return nil, err
 	}

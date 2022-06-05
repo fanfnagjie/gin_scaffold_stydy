@@ -2,9 +2,10 @@ package dao
 
 import (
 	"github.com/e421083458/gin_scaffold_study/dto"
-	//"github.com/e421083458/gorm"
+	"github.com/e421083458/gin_scaffold_study/public"
+	"github.com/e421083458/gorm"
 	"github.com/gin-gonic/gin"
-	"gorm.io/gorm"
+	//"gorm.io/gorm"
 	"time"
 )
 
@@ -74,7 +75,8 @@ func (t *ServiceInfo) PageList(c *gin.Context, tx *gorm.DB, param *dto.ServiceLi
 	list := []ServiceInfo{}
 	offset := (param.PageNo - 1) * param.PageSize
 
-	query := tx.WithContext(c)
+	//query := tx.WithContext(c)
+	query := tx.SetCtx(public.GetGinTraceContext(c))
 	query = query.Table(t.TableName()).Where("is_delete=0")
 	if param.Info != "" {
 		query = query.Where("(service_name like ? or service_desc like ?)", "%"+param.Info+"%", "%"+param.Info+"%")
@@ -88,7 +90,7 @@ func (t *ServiceInfo) PageList(c *gin.Context, tx *gorm.DB, param *dto.ServiceLi
 
 func (t *ServiceInfo) Find(c *gin.Context, tx *gorm.DB, search *ServiceInfo) (*ServiceInfo, error) {
 	out := &ServiceInfo{}
-	err := tx.WithContext(c).Where(search).Find(out).Error
+	err := tx.SetCtx(public.GetGinTraceContext(c)).Where(search).Find(out).Error
 	if err != nil {
 		return nil, err
 	}
@@ -96,5 +98,5 @@ func (t *ServiceInfo) Find(c *gin.Context, tx *gorm.DB, search *ServiceInfo) (*S
 }
 
 func (t *ServiceInfo) Save(c *gin.Context, tx *gorm.DB) error {
-	return tx.WithContext(c).Save(t).Error
+	return tx.SetCtx(public.GetGinTraceContext(c)).Save(t).Error
 }

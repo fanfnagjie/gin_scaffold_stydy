@@ -3,7 +3,7 @@ package middleware
 import (
 	"bytes"
 	"github.com/e421083458/gin_scaffold_study/public"
-	"github.com/e421083458/golang_common/lib"
+	"github.com/e421083458/gin_scaffold_study/golang_common/lib"
 	"github.com/gin-gonic/gin"
 	"io/ioutil"
 	"time"

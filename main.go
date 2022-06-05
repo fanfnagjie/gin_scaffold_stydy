@@ -1,15 +1,17 @@
 package main
 
 import (
+	"github.com/e421083458/gin_scaffold_study/golang_common/lib"
 	"github.com/e421083458/gin_scaffold_study/router"
-	"github.com/e421083458/golang_common/lib"
+	//"github.com/e421083458/gin_scaffold_study/golang_common/lib"
+
 	"os"
 	"os/signal"
 	"syscall"
 )
 
 func main()  {
-	lib.InitModule("./conf/dev/",[]string{"base","mysql","redis"})
+	lib.InitModule("./conf/dev/")
 	defer lib.Destroy()
 	router.HttpServerRun()
 

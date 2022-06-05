@@ -10,14 +10,14 @@ github.com/PuerkitoBio/urlesc
 # github.com/boj/redistore v0.0.0-20180917114910-cd5dcc76aeff
 ## explicit
 github.com/boj/redistore
-# github.com/e421083458/golang_common v1.2.1
-## explicit; go 1.16
-github.com/e421083458/golang_common/lib
-github.com/e421083458/golang_common/log
+# github.com/denisenkom/go-mssqldb v0.0.0-20190515213511-eb9f6a1743f3
+## explicit; go 1.12
 # github.com/e421083458/gorm v1.0.1
 ## explicit
 github.com/e421083458/gorm
 github.com/e421083458/gorm/dialects/mysql
+# github.com/erikstmartin/go-testdb v0.0.0-20160219214506-8d10e4a1bae5
+## explicit
 # github.com/fsnotify/fsnotify v1.4.7
 ## explicit
 github.com/fsnotify/fsnotify
@@ -108,6 +108,8 @@ github.com/json-iterator/go
 # github.com/leodido/go-urn v1.2.0
 ## explicit; go 1.13
 github.com/leodido/go-urn
+# github.com/lib/pq v1.1.1
+## explicit
 # github.com/magiconair/properties v1.8.0
 ## explicit
 github.com/magiconair/properties
@@ -119,6 +121,8 @@ github.com/mailru/easyjson/jwriter
 # github.com/mattn/go-isatty v0.0.14
 ## explicit; go 1.12
 github.com/mattn/go-isatty
+# github.com/mattn/go-sqlite3 v1.10.0
+## explicit
 # github.com/mitchellh/mapstructure v1.1.2
 ## explicit
 github.com/mitchellh/mapstructure
@@ -200,15 +204,10 @@ gopkg.in/go-playground/validator.v9/translations/zh
 gopkg.in/yaml.v2
 # gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
 ## explicit
-# gorm.io/driver/mysql v1.2.1
-## explicit; go 1.14
-gorm.io/driver/mysql
 # gorm.io/gorm v1.22.4
 ## explicit; go 1.14
 gorm.io/gorm
-gorm.io/gorm/callbacks
 gorm.io/gorm/clause
 gorm.io/gorm/logger
-gorm.io/gorm/migrator
 gorm.io/gorm/schema
 gorm.io/gorm/utils

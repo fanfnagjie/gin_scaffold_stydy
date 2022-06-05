@@ -4,7 +4,7 @@ import (
 	"github.com/e421083458/gin_scaffold_study/controller"
 	"github.com/e421083458/gin_scaffold_study/docs"
 	"github.com/e421083458/gin_scaffold_study/middleware"
-	"github.com/e421083458/golang_common/lib"
+	"github.com/e421083458/gin_scaffold_study/golang_common/lib"
 	"github.com/gin-gonic/contrib/sessions"
 	"github.com/gin-gonic/gin"
 	"github.com/swaggo/files"

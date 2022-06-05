@@ -1,11 +1,12 @@
 package dao
 
 import (
+	"github.com/e421083458/gin_scaffold_study/public"
 	//"github.com/e421083458/gin_scaffold_study/public"
 	//"github.com/e421083458/gin_scaffold_study/reverse_proxy/load_balance"
-	//"github.com/e421083458/gorm"
+	"github.com/e421083458/gorm"
 	"github.com/gin-gonic/gin"
-	"gorm.io/gorm"
+	//"gorm.io/gorm"
 )
 
 type LoadBalance struct {
@@ -31,7 +32,7 @@ func (t *LoadBalance) TableName() string {
 
 func (t *LoadBalance) Find(c *gin.Context, tx *gorm.DB, search *LoadBalance) (*LoadBalance, error) {
 	model := &LoadBalance{}
-	err := tx.WithContext(c).Where(search).Find(model).Error
+	err := tx.SetCtx(public.GetGinTraceContext(c)).Where(search).Find(model).Error
 	return model, err
 }
 //

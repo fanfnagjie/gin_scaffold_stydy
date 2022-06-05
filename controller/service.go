@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"github.com/e421083458/gin_scaffold_study/dao"
 	"github.com/e421083458/gin_scaffold_study/dto"
-	"github.com/e421083458/golang_common/lib"
 	//"github.com/e421083458/gin_scaffold_study/golang_common/lib"
+	"github.com/e421083458/gin_scaffold_study/golang_common/lib"
 	"github.com/e421083458/gin_scaffold_study/middleware"
 	"github.com/e421083458/gin_scaffold_study/public"
 	"github.com/gin-gonic/gin"
@@ -39,7 +39,7 @@ func (service *ServiceController) ServiceList(c *gin.Context) {
 
 	tx, err := lib.GetGormPool("default")
 	if err != nil {
-		middleware.ResponseError(c, 2101, err)
+		middleware.ResponseError(c, 2001, err)
 		return
 	}
 

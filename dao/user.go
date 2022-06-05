@@ -2,7 +2,10 @@ package dao
 
 import (
 	"github.com/e421083458/gin_scaffold_study/dto"
-	"gorm.io/gorm"
+	"github.com/e421083458/gin_scaffold_study/public"
+
+	//"gorm.io/gorm"
+	"github.com/e421083458/gorm"
 	"github.com/gin-gonic/gin"
 	"time"
 )
@@ -28,7 +31,7 @@ func (f *User) TableName() string {
 }
 
 func (f *User) Del(c *gin.Context, tx *gorm.DB, idSlice []string) error {
-	err := tx.WithContext(c).Where("id in (?)", idSlice).Delete(&User{}).Error
+	err := tx.SetCtx(public.GetGinTraceContext(c)).Where("id in (?)", idSlice).Delete(&User{}).Error
 	if err != nil {
 		return err
 	}
@@ -37,7 +40,7 @@ func (f *User) Del(c *gin.Context, tx *gorm.DB, idSlice []string) error {
 
 func (f *User) Find(c *gin.Context, tx *gorm.DB, id int64) (*User, error) {
 	var user *User
-	err := tx.WithContext(c).Where("id = ?", id).First(user).Error
+	err := tx.SetCtx(public.GetGinTraceContext(c)).Where("id = ?", id).First(user).Error
 	if err != nil {
 		return nil, err
 	}
@@ -48,7 +51,7 @@ func (f *User) PageList(c *gin.Context, tx *gorm.DB, params *dto.ListPageInput) 
 	var list []User
 	var count int64
 	offset := (params.Page - 1) * params.PageSize
-	query := tx.WithContext(c)
+	query := tx.SetCtx(public.GetGinTraceContext(c))
 	if params.Name != "" {
 		query = query.Where("name = ?", params.Name)
 	}
@@ -64,7 +67,7 @@ func (f *User) PageList(c *gin.Context, tx *gorm.DB, params *dto.ListPageInput) 
 }
 
 func (f *User) Save(c *gin.Context, tx *gorm.DB) error {
-	if err := tx.WithContext(c).Save(f).Error; err != nil {
+	if err := tx.SetCtx(public.GetGinTraceContext(c)).Save(f).Error; err != nil {
 		return err
 	}
 	return nil
