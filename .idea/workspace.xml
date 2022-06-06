@@ -21,34 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="99f93666-5cee-4c98-8371-0d7816ce2314" name="Default Changelist" comment="呆呆的">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/admin.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/admin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/admin_login.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/admin_login.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/api.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/demo.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/demo.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/admin.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/admin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/demo.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/demo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/service_access_control.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/service_access_control.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/service_grpc_rule.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/service_grpc_rule.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/service_http_rule.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/service_http_rule.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/service_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/service_info.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/service_load_balance.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/service_load_balance.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/service_tcp_rule.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/service_tcp_rule.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/golang_common/lib/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/golang_common/lib/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/docs.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dto/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/dto/service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/gin_scaffold_study.inf.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gin_scaffold_study.inf.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/ip_auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/ip_auth.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/recovery.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/recovery.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/request_log.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/request_log.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/response.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/public/log.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/httpserver.go" beforeDir="false" afterPath="$PROJECT_DIR$/router/httpserver.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/route.go" beforeDir="false" afterPath="$PROJECT_DIR$/router/route.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/api.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/translation.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/translation.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/github.com/e421083458/golang_common/LICENSE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/github.com/e421083458/golang_common/lib/conf.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/github.com/e421083458/golang_common/lib/context.go" beforeDir="false" />
@@ -79,7 +59,6 @@
       <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/callbacks/transaction.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/callbacks/update.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/migrator/migrator.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/modules.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/modules.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,9 +149,9 @@
       <screen x="51" y="23" width="1389" height="877" />
     </state>
     <state width="1327" height="217" key="GridCell.Tab.0.right/51.23.1389.877@51.23.1389.877" timestamp="1654410263377" />
-    <state x="458" y="234" width="598" height="576" key="find.popup" timestamp="1654410824739">
+    <state x="458" y="234" width="598" height="576" key="find.popup" timestamp="1654479770963">
       <screen x="51" y="23" width="1389" height="877" />
     </state>
-    <state x="458" y="234" width="598" height="576" key="find.popup/51.23.1389.877@51.23.1389.877" timestamp="1654410824739" />
+    <state x="458" y="234" width="598" height="576" key="find.popup/51.23.1389.877@51.23.1389.877" timestamp="1654479770963" />
   </component>
 </project>
