@@ -59,16 +59,6 @@ func (demo *DemoController) Redis(c *gin.Context) {
 	return
 }
 
-// ListPage godoc
-// @Summary 测试数据绑定
-// @Description 测试数据绑定
-// @Tags 用户
-// @ID /demo/bind
-// @Accept  json
-// @Produce  json
-// @Param polygon body dto.DemoInput true "body"
-// @Success 200 {object} middleware.Response{data=dto.DemoInput} "success"
-// @Router /demo/bind [post]
 func (demo *DemoController) Bind(c *gin.Context) {
 	params := &dto.DemoInput{}
 	if err := params.BindingValidParams(c); err != nil {

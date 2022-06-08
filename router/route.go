@@ -147,5 +147,11 @@ func InitRouter(middlewares ...gin.HandlerFunc) *gin.Engine {
 	{
 		controller.ApiLoginRegister(apiAuthGroup)
 	}
+
+	oauth := router.Group("/oauth")
+	oauth.Use(middleware.TranslationMiddleware())
+	{
+		controller.OAuthRegister(oauth)
+	}
 	return router
 }
