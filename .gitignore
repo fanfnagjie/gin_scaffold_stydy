@@ -1,5 +1,4 @@
-*.log
-*.temp
-.idea/
-vendor/
-
+.idea
+logs
+bin
+.DS_Store
