@@ -20,106 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99f93666-5cee-4c98-8371-0d7816ce2314" name="Default Changelist" comment="呆呆的">
-      <change afterPath="$PROJECT_DIR$/controller/oauth.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/app.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dto/app.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dto/oauth.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/flow_count_handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/flow_limit_handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/jwt.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/redis.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/redis_flow_count.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/demo.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/demo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/docs.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docs.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dto/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/dto/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/gin_scaffold_study.inf.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gin_scaffold_study.inf.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/const.go" beforeDir="false" afterPath="$PROJECT_DIR$/public/const.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/public/util.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/route.go" beforeDir="false" afterPath="$PROJECT_DIR$/router/route.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/clone.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/decode.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/deprecated.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/deprecated.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/discard.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/discard.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/encode.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/equal.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/extensions.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/extensions.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/lib.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/message_set.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/pointer_reflect.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/pointer_unsafe.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/properties.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/properties.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/table_marshal.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/table_merge.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/table_unmarshal.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/text.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/text_parser.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/now/Guardfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/now/License" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/now/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/now/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/now/now.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/now/time.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/magiconair/properties/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/magiconair/properties/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/magiconair/properties/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/magiconair/properties/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/magiconair/properties/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/magiconair/properties/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/magiconair/properties/load.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/magiconair/properties/load.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/spf13/viper/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/spf13/viper/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/spf13/viper/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/spf13/viper/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/spf13/viper/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/spf13/viper/flags.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/spf13/viper/flags.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/spf13/viper/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/spf13/viper/util.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/spf13/viper/viper.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/spf13/viper/viper.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/License" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/association.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/callbacks.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/chainable_api.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/clause.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/delete.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/expression.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/from.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/group_by.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/insert.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/joins.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/limit.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/locking.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/on_conflict.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/order_by.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/returning.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/select.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/set.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/update.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/values.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/where.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/clause/with.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/errors.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/finisher_api.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/gorm.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/interfaces.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/logger/logger.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/logger/sql.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/migrator.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/model.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/prepare_stmt.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/scan.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/schema/check.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/schema/field.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/schema/index.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/schema/interfaces.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/schema/naming.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/schema/relationship.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/schema/schema.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/schema/utils.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/soft_delete.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/statement.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gorm.io/gorm/utils/utils.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/modules.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/modules.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +43,7 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="2A8yheJuJrWIxwlkfS5tR1IBr1e" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -155,9 +65,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/controller" />
       <recent name="$PROJECT_DIR$/dto" />
       <recent name="$PROJECT_DIR$/dao" />
-      <recent name="$PROJECT_DIR$/controller" />
     </key>
   </component>
   <component name="RunManager">
